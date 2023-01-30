@@ -1,9 +1,9 @@
 
-function MainContent () {
+function MainContent (props) {
     return(
-        <main id="main">
+        <main id="main" className={props.darkMode ? "dark" : ""}>
             <h1 className="main-title">Fun facts about React</h1>
-            <ul className="main-list">
+            <ul className="main-facts">
                 <li>Was first released in 2013</li>
                 <li>Was originally created by Jordan Walke</li>
                 <li>Has well over 100k stars on Github</li>
